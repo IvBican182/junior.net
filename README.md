@@ -26,18 +26,19 @@ insert into [dbo].[Currencies] (Id, Code)
 VALUES (NEWID(),'Euro')
 select * from dbo.OrderStatuses
 
-//STATUSE JE POTREBNO točno ovako unijeti jer ovise o konstantama !!
-insert into dbo.OrderStatuses (Id, StatusName, Description)
+#STATUSE JE POTREBNO točno ovako unijeti jer ovise o konstantama !!
+-insert into dbo.OrderStatuses (Id, StatusName, Description)
 VALUES ('CFD306D7-C7F3-47E4-A738-B34FF23EDE6B','Active','aktivan')
 
-insert into dbo.OrderStatuses (Id, StatusName, Description)
+-insert into dbo.OrderStatuses (Id, StatusName, Description)
 VALUES ('896FE641-2A83-4031-9D48-18805A187D49','Confirmed','potvrđen')
 
-insert into dbo.OrderStatuses (Id, StatusName, Description)
+-insert into dbo.OrderStatuses (Id, StatusName, Description)
 VALUES ('FDA40C83-2107-4CBA-AB2F-575D43288C75','Cancelled','otkazan')
 
 #Testiranje inserta Ordera može biti malo naporno za napisati, pa šaljem body:
 naravno u url stavi još i userId
+#
 {
     "Products":[
         {
