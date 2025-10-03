@@ -1,8 +1,8 @@
 Controlleri su uredno testirani, pokušao sam kreirati što sličniji slučaj stvarnoj aplikaciji
 
 - clone repo
-- dotnet build
 - podesiti connection string
+- dotnet build
 - Add-Migration u CPM-u
 - update-database
 - dotnet build, dotnet run
