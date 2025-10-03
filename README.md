@@ -1,4 +1,4 @@
-Controlleri su uredno testirani, pokušao sam kreirati što sličniji slučaj stvarnoj aplikaciji
+#Controlleri su uredno testirani, pokušao sam kreirati što sličniji slučaj stvarnoj aplikaciji
 
 - clone repo
 - podesiti connection string
@@ -7,7 +7,7 @@ Controlleri su uredno testirani, pokušao sam kreirati što sličniji slučaj st
 - update-database
 - dotnet build, dotnet run
 
-- Prije isprobavanja controllera za Narudžbe (Order) potrebno je popuniti tablice vrijednostima, evo par insertova da ubrzamo proces:
+# Prije isprobavanja controllera za Narudžbe (Order) potrebno je popuniti tablice vrijednostima, evo par insertova da ubrzamo proces:
 
 
 insert into [dbo].[Users] (Id, FirstName, LastName, Email)
@@ -36,7 +36,7 @@ VALUES ('896FE641-2A83-4031-9D48-18805A187D49','Confirmed','potvrđen')
 insert into dbo.OrderStatuses (Id, StatusName, Description)
 VALUES ('FDA40C83-2107-4CBA-AB2F-575D43288C75','Cancelled','otkazan')
 
-Testiranje inserta Ordera može biti malo naporno za napisati, pa šaljem body:
+#Testiranje inserta Ordera može biti malo naporno za napisati, pa šaljem body:
 naravno u url stavi još i userId
 {
     "Products":[
